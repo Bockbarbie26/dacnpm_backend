@@ -10,7 +10,7 @@ class StudentsController{
                 res.json
             }
         } catch (error) {
-            res.status(500).json({error: 'Đã có lỗi xảy ra. Vui lòng thử lại'})
+            res.status(500).json({error: 'Lỗi máy chủ'})
         }
     }
 
@@ -25,7 +25,7 @@ class StudentsController{
                 res.status(400).json({error: 'Không có tên học viên cần tìm!'})
             }
         } catch (error) {
-            res.status(500).json({error: 'Đã có lỗi xảy ra. Vui lòng thử lại'})
+            res.status(500).json({error: 'Lỗi máy chủ'})
         }
     }
 
@@ -57,7 +57,7 @@ class StudentsController{
                 res.status(400).json({error: 'Tên đã có trong danh sách!'})
             }
         } catch (error) {
-            res.status(500).json({error: 'Đã có lỗi xảy ra. Vui lòng thử lại'})
+            res.status(500).json({error: 'Lỗi máy chủ'})
         }
     }
     //Sửa thông tin học viên
@@ -91,7 +91,7 @@ class StudentsController{
             }
         }
         catch (error) {
-            res.status(500).json({error: 'Đã có lỗi xảy ra. Vui lòng thử lại'})
+            res.status(500).json({error: 'Lỗi máy chủ'})
         }
     }
     async removeStudent(req,res){
@@ -104,7 +104,7 @@ class StudentsController{
                 res.status(400).json({error:'Xóa lớp không thành công'})
             }
         } catch (error) {
-            res.status(500).json({error: 'Đã có lỗi xảy ra. Vui lòng thử lại'})
+            res.status(500).json({error: 'Lỗi máy chủ'})
         }
     }
     
